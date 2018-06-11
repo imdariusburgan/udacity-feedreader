@@ -54,7 +54,6 @@ $(function() {
     /* TODO: Write a new test suite named "The menu" */
     describe('The menu', function() {
         const menu = document.querySelector('body');
-        const menuIcon = document.querySelector('.menu-icon-link');
 
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
@@ -71,6 +70,7 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
          it('shows when clicked', function() {
+            const menuIcon = document.querySelector('.menu-icon-link');
             // Show menu when clicked
             menuIcon.click();
             expect(menu.className).not.toContain('menu-hidden');
